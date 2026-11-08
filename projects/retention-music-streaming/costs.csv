@@ -1,0 +1,4 @@
+session_id,date,model,input_tokens,output_tokens,cache_write,cache_read,usd
+42fcd63c-dae8-44be-9418-9e251081c861,2026-11-04,claude-sonnet-5-5,66,35412,83742,1712493,1.3592
+42fcd63c-dae8-44be-9418-9e251081c861,2026-11-04,claude-haiku-5-5,18,13866,38777,194498,0.1373
+acabb17f-f0a8-4fff-b596-ce657ea33313,2026-11-08,claude-sonnet-5-5,42,40201,95683,1386200,1.3778
