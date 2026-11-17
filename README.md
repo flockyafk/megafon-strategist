@@ -23,6 +23,22 @@ claude
 
 Агент сам создаст проект, задаст 2 до 3 уточняющих вопроса и поведёт работу по шагам. Материалы (PDF, XLSX, ссылки) положи в `projects/<имя>/sources/` или прикрепи в чат.
 
+## Windows
+
+- Команды `python` и `pip` вместо `python3` и `pip3`.
+- Скрипты `.sh` запускай через Git Bash: `& "C:\Program Files\Git\bin\bash.exe" scripts/check_secrets.sh`. Агент вызывает их сам.
+- Если `claude` не находится, добавь `C:\Users\<имя>\.local\bin` в PATH.
+
+## Демонстрационный проект
+
+Готовый прогон лежит в `projects/megafon-demo/`: музыкальная подписка оператора связи, открытые данные. Читать в таком порядке:
+1. `output/report.md`: рекомендация, пробелы, расходы.
+2. `output/options.md`: варианты и возражения.
+3. `output/product-strategy.md`, `output/communication-strategy.md`, `output/verification.md`.
+4. `evidence.csv`: реестр сведений с источниками.
+5. `decisions.md`: журнал решений и обязательства.
+6. `baseline/`: ответы обычного чата на тот же запрос. Сравнение в `docs/comparison-with-chat.md`.
+
 ## Как управлять
 
 - Остановить: Esc. Состояние уже сохранено в `state.md`.
