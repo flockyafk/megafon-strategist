@@ -4,7 +4,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 
-def active_project() -> Path | None:
+def active_project() -> "Path | None":
     f = ROOT / ".active_project"
     if not f.exists():
         return None

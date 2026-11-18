@@ -260,3 +260,7 @@
 - 2026-11-18 00:01:20 | Bash | cd "D:/мои файлы/megafon-strategist" && PYTHONIOENCODING=utf-8 python "C:/Users/rkt8r/AppData/Local/Temp/claude/6a9085a214a8ec2c/e90d3597-d4d0-4938-a3a8-48ed3e1
 - 2026-11-18 00:01:26 | Bash | cd "D:/мои файлы/megafon-strategist/projects/megafon-demo/output" && python - <<'EOF' s=open('report.md',encoding='utf-8').read() i=s.index("## Сколько стоила р
 - 2026-11-18 00:01:29 | Bash | cd "D:/мои файлы/megafon-strategist/projects/megafon-demo" && python - <<'EOF' s=open('state.md',encoding='utf-8').read() s=s.replace("- Обновлено: 2026-11-17",
+- 2026-11-18 13:19:12 | Bash | python scripts/costs_report.py 2>&1 | tail -20; git status --short; grep -n "расход\|Расход" projects/megafon-demo/output/report.md | head
+- 2026-11-18 13:19:14 | Bash | date '+%Y-%m-%d %H:%M' && python - <<'E' p='projects/megafon-demo/output/report.md' s=open(p).read() s=s.replace("на 2026-11-18 00:01, все сеансы проекта: 3 сеа
+- 2026-11-18 13:19:16 | Bash | sed -i '' 's/2026-11-18 DATE/2026-11-18 13:19/' projects/megafon-demo/output/report.md && cat projects/megafon-demo/costs.csv | tail -5
+- 2026-11-18 13:19:20 | Bash | sed -i '' 's/сеанс критики и правок 1,29 \$/сеанс критики и правок 1,96 $/' projects/megafon-demo/output/report.md && grep -c "1,96" projects/megafon-demo/outpu
